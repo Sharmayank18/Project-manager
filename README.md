@@ -69,6 +69,28 @@ A full-stack web application for project and task management with role-based acc
 - **Admin**: Full access to all features
 - **Member**: Can create projects, tasks, and manage assigned work
 
+## Deployment
+
+### Deploy to Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your GitHub repository to Vercel
+3. Add environment variables in Vercel dashboard:
+   - `MONGODB_URI`: Your MongoDB connection string
+   - `JWT_SECRET`: A secure random string for JWT signing
+4. Deploy automatically
+
+### Deploy to Railway
+1. Push your code to GitHub
+2. Connect your GitHub repository to Railway
+3. Add environment variables in Railway dashboard
+4. Deploy automatically
+
+### Environment Variables
+```bash
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/project-manager
+JWT_SECRET=your-super-secret-jwt-key-here
+```
+
 ## Database Schema
 
 ### User
