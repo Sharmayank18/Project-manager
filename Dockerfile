@@ -14,8 +14,5 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Expose port (Railway will set PORT env var)
-EXPOSE $PORT
-
-# Start the application
+# Start the application (Next.js will use PORT env var automatically)
 CMD ["npm", "start"]
